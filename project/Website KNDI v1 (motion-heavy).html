@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KNDI · Digitaal innoveren. Maar hoe?</title>
+<meta name="description" content="Koen Nijhuis Digitale Innovatie — naast de ondernemer als gids in de complexe wereld van het internet.">
+<link rel="stylesheet" href="restyle/v1/style.css">
+</head>
+<body>
+
+<!-- Custom slash cursor + trail -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursor-t1"></div>
+<div class="cursor-trail" id="cursor-t2"></div>
+
+<!-- Top scroll progress -->
+<div class="scroll-progress"><i id="scrollbar"></i></div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="inner">
+    <a href="#hero" class="brand" aria-label="KNDI.NL">
+      <span>KNDI</span><span class="dot">.</span><span>NL</span>
+      <span class="slash"></span>
+    </a>
+    <nav class="nav" aria-label="primary">
+      <a href="#werkzaamheden">Werkzaamheden</a>
+      <a href="#cv">CV</a>
+      <a href="#klanten">Klanten</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="cta" data-magnetic>
+      E-mail mij
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- Side index -->
+<aside class="side-index" id="sideIndex">
+  <a href="#hero" data-target="hero"><span class="bar"></span>00 Intro</a>
+  <a href="#about" data-target="about"><span class="bar"></span>01 Werk</a>
+  <a href="#cv" data-target="cv"><span class="bar"></span>02 CV</a>
+  <a href="#werkzaamheden" data-target="werkzaamheden"><span class="bar"></span>03 Diensten</a>
+  <a href="#klanten" data-target="klanten"><span class="bar"></span>04 Klanten</a>
+  <a href="#contact" data-target="contact"><span class="bar"></span>05 Contact</a>
+</aside>
+
+<!-- ====================== HERO ====================== -->
+<section class="hero" id="hero" data-bg="yellow">
+  <div class="hero-bg-slashes" id="bgSlashes"></div>
+
+  <div class="hero-wrap">
+    <div class="hero-display">
+      <h1 class="line" data-scroll-x="-180">
+        Digitaal innoveren<span class="slash-inline"></span>
+      </h1>
+      <p class="line-q" data-scroll-x="220">Maar hoe?</p>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow r-up">Koen Nijhuis / Digitale Innovatie</p>
+        <p class="r-up d1">
+          Door het gebrek aan expertise, de complexiteit van internet techniek
+          en het enorme aanbod van applicaties zien MKB ondernemers door de
+          bomen het digitale bos niet meer. Naast de ondernemer als gids in
+          die complexe wereld &mdash; dat is mijn werk.
+        </p>
+        <div class="hero-actions r-up d2">
+          <a href="#contact" class="btn btn-primary" data-magnetic>
+            <span class="slash"></span> E-mail mij
+          </a>
+          <a href="#about" class="btn btn-ghost" data-magnetic>Lees meer</a>
+        </div>
+      </div>
+
+      <div class="hero-photo" data-parallax="0.18">
+        <img src="restyle/assets/image-hero.jpg" alt="" data-parallax-img="0.12">
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <span class="bar"></span>
+  </div>
+</section>
+
+<!-- ====================== MARQUEE 1 ====================== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>
+      Onafhankelijk dus eerlijk <i class="dot"></i>
+      Geen uren maar waarde <i class="dot"></i>
+      Dat werkt <i class="dot"></i>
+      Digitaal innoveren <i class="dot"></i>
+      Maar hoe? <i class="dot"></i>
+    </span>
+    <span>
+      Onafhankelijk dus eerlijk <i class="dot"></i>
+      Geen uren maar waarde <i class="dot"></i>
+      Dat werkt <i class="dot"></i>
+      Digitaal innoveren <i class="dot"></i>
+      Maar hoe? <i class="dot"></i>
+    </span>
+  </div>
+</div>
+
+<!-- ====================== ABOUT — sticky word reveal ====================== -->
+<section class="about" id="about" data-bg="white">
+  <div class="about-stack">
+    <div class="about-sticky">
+      <div class="container about-inner">
+        <p class="about-eyebrow">Geen uren maar waarde</p>
+        <p class="about-reveal" id="aboutReveal" data-text="In gesprek met de ondernemer kijken waar het digitale proces slimmer, leuker en efficiënter kan. Creativiteit gebruiken en slim organiseren om het maximale voor de klant eruit te halen ❘is mijn talent❘ en daar liggen mijn drijfveren."></p>
+        <div class="about-progress">
+          <span>Voortgang</span>
+          <div class="bar"><i id="aboutBar"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Secondary about block on white -->
+<section style="background:#fff;color:#000;padding:40px 0 140px;">
+  <div class="container" style="max-width:880px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+      <div>
+        <p class="r-up" style="font-size:18px;line-height:1.6;margin:0;color:#333;">
+          Digitalisering en automatisering schuiven op van secundaire naar
+          primaire processen. Daarmee verandert ons dagelijks leven maar ook
+          het functioneren van bedrijven.
+        </p>
+      </div>
+      <div>
+        <p class="r-up d1" style="font-size:18px;line-height:1.6;margin:0;color:#333;">
+          Naast de ondernemer als gids in de complexe wereld van het internet
+          op zoek naar de beste oplossing, de juiste keuzes en de daarbij
+          behorende investeringen.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== MARQUEE 2 ====================== -->
+<div class="marquee invert" aria-hidden="true">
+  <div class="marquee-track" style="animation-direction:reverse;animation-duration:36s;">
+    <span>
+      Inventarisaties <i class="dot"></i>
+      Partijselectie <i class="dot"></i>
+      Pitch uitschrijven <i class="dot"></i>
+      Pitch beoordeling <i class="dot"></i>
+      Offertes beoordelen <i class="dot"></i>
+      Digitale ontzorging <i class="dot"></i>
+    </span>
+    <span>
+      Inventarisaties <i class="dot"></i>
+      Partijselectie <i class="dot"></i>
+      Pitch uitschrijven <i class="dot"></i>
+      Pitch beoordeling <i class="dot"></i>
+      Offertes beoordelen <i class="dot"></i>
+      Digitale ontzorging <i class="dot"></i>
+    </span>
+  </div>
+</div>
+
+<!-- ====================== CV — horizontal pin scroll ====================== -->
+<section class="cv" id="cv" data-bg="black">
+  <div class="cv-stack" id="cvStack">
+    <div class="cv-pin">
+      <div class="container cv-head r-up">
+        <p class="eyebrow">Mijn weg naar</p>
+        <h2>Digitale<br>innovatie<span class="q">van student tot eigenaar.</span></h2>
+      </div>
+
+      <div class="cv-track-wrap">
+        <div class="cv-rail"></div>
+        <div class="cv-track" id="cvTrack">
+          <article class="cv-item up">
+            <div>
+              <p class="year-range">1996 — 1999</p>
+              <div class="year">'96</div>
+              <h3 class="what">Saxion Hogeschool</h3>
+              <p class="role">Hogere Informatica</p>
+            </div>
+            <span class="dot"></span>
+          </article>
+          <article class="cv-item">
+            <div>
+              <p class="year-range">1998 — 2003</p>
+              <div class="year">'98</div>
+              <h3 class="what">Innovadis</h3>
+              <p class="role">Developer</p>
+            </div>
+            <span class="dot"></span>
+          </article>
+          <article class="cv-item up">
+            <div>
+              <p class="year-range">2003 — 2005</p>
+              <div class="year">'03</div>
+              <h3 class="what">Innovadis</h3>
+              <p class="role">Projectleider</p>
+            </div>
+            <span class="dot"></span>
+          </article>
+          <article class="cv-item">
+            <div>
+              <p class="year-range">2005 — 2015</p>
+              <div class="year">'05</div>
+              <h3 class="what">Itmundi internet</h3>
+              <p class="role">Eigenaar</p>
+            </div>
+            <span class="dot"></span>
+          </article>
+          <article class="cv-item up">
+            <div>
+              <p class="year-range">2015 — 2017 *</p>
+              <div class="year">'15</div>
+              <h3 class="what">Nerds &amp; Company</h3>
+              <p class="role">Mede-eigenaar</p>
+            </div>
+            <span class="dot"></span>
+          </article>
+          <article class="cv-item">
+            <div>
+              <p class="year-range">2018 — heden</p>
+              <div class="year" style="color:#fff;">'18</div>
+              <h3 class="what" style="color:var(--y);">KNDI</h3>
+              <p class="role">Eigenaar</p>
+            </div>
+            <span class="dot" style="background:#fff;"></span>
+          </article>
+        </div>
+
+        <div class="cv-foot">
+          <span>SCROLL</span>
+          <div class="progress"><i id="cvProgress"></i></div>
+          <span id="cvCount">01 / 06</span>
+        </div>
+        <p class="cv-footnote">* De bedrijfsnaam is eind 2015 gewijzigd van Itmundi naar Nerds &amp; Company.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SERVICES — sticky stack ====================== -->
+<section class="services" id="werkzaamheden" data-bg="yellow">
+  <div class="container services-head">
+    <p class="eyebrow r-up">Een specifieke</p>
+    <h2 class="r-up d1">behoefte?<span class="q">Zes manieren waarop ik help.</span></h2>
+    <p class="r-up d2">
+      Wil je meer informatie over onderstaande werkzaamheden, neem dan
+      contact met me op.
+    </p>
+  </div>
+
+  <div class="service-stack" id="serviceStack">
+    <article class="service-card" data-i="1">
+      <div class="num">01</div>
+      <div class="body">
+        <h3>Inventarisaties</h3>
+        <p>Samen uitvinden wat er gerealiseerd moet worden en hoe zaken moeten functioneren om tot een goed eindresultaat te komen.</p>
+      </div>
+      <div class="arrow"><span class="slash"></span>Start</div>
+    </article>
+    <article class="service-card" data-i="2">
+      <div class="num">02</div>
+      <div class="body">
+        <h3>Partijselectie</h3>
+        <p>Een concrete opdracht maar geen idee welke partij je moet vragen voor de realisatie? Vergelijk altijd appels met appels, het moeilijkste wat er is&hellip;</p>
+      </div>
+      <div class="arrow"><span class="slash"></span>Match</div>
+    </article>
+    <article class="service-card" data-i="3">
+      <div class="num">03</div>
+      <div class="body">
+        <h3>Pitch uitschrijven</h3>
+        <p>Partijen geselecteerd? De briefing naar elke partij moet ook goed zijn zodat iedereen gelijke kansen heeft.</p>
+      </div>
+      <div class="arrow"><span class="slash"></span>Brief</div>
+    </article>
+    <article class="service-card" data-i="4">
+      <div class="num">04</div>
+      <div class="body">
+        <h3>Pitch beoordeling</h3>
+        <p>Aanschuiven tijdens de pitch en nadien advies en mening over de gegeven pitches zodat een goed besluit genomen kan worden.</p>
+      </div>
+      <div class="arrow"><span class="slash"></span>Judge</div>
+    </article>
+    <article class="service-card" data-i="5">
+      <div class="num">05</div>
+      <div class="body">
+        <h3>Offertes beoordelen</h3>
+        <p>Een aantal offertes liggen — maar is aan alles gedacht? Is de prijs goed voor hetgeen gevraagd wordt? En de techniek?</p>
+      </div>
+      <div class="arrow"><span class="slash"></span>Check</div>
+    </article>
+    <article class="service-card" data-i="6">
+      <div class="num">06</div>
+      <div class="body">
+        <h3>Digitale ontzorging</h3>
+        <p>De droom van elke ondernemer. Op waarde gaan zitten en digitaal ontzorgen, regelen en de juiste keuzes maken.</p>
+      </div>
+      <div class="arrow"><span class="slash"></span>Done</div>
+    </article>
+  </div>
+
+  <div class="services-tail">
+    <p class="r-up">Geen uren maar waarde: <b>dat werkt!</b></p>
+    <a href="#contact" class="btn btn-primary btn-lg" data-magnetic>
+      <span class="slash"></span> Neem contact met me op
+    </a>
+  </div>
+</section>
+
+<!-- ====================== CLIENTS ====================== -->
+<section class="clients" id="klanten" data-bg="white">
+  <div class="container">
+    <div class="clients-head">
+      <h2 class="r-up">Onafhankelijk<span class="q">dus eerlijk.</span></h2>
+      <p class="r-up d1">Ik werk o.a. met de volgende klanten — een mix van bouwers, makers, retailers en logistieke ondernemers.</p>
+    </div>
+
+    <div class="client-strip">
+      <div class="client-cell r-up"><img src="restyle/assets/client-loohuis.png" alt="Loohuis"></div>
+      <div class="client-cell r-up d1"><img src="restyle/assets/client-ditt.png" alt="DITT"></div>
+      <div class="client-cell r-up d2"><img src="restyle/assets/client-tlogo.png" alt="T-Logo"></div>
+      <div class="client-cell r-up d3"><img src="restyle/assets/client-loogisch.png" alt="Loogisch"></div>
+    </div>
+
+    <div class="partner r-up">
+      <img src="restyle/assets/partner-leadinfo.png" alt="Leadinfo partner">
+      <p>Officieel <b>Leadinfo</b> partner — herkennen welke bedrijven jouw site bezoeken, zonder cookies.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== TESTIMONIAL ====================== -->
+<section class="testimonial" data-bg="yellow">
+  <div class="container">
+    <blockquote class="quote" id="quote" data-text="Koen is een prettige kerel om mee te werken, verstand van zaken en pro-actief. Onze samenwerking zal waarschijnlijk nog lang duren."></blockquote>
+    <div class="quote-cite r-up">
+      <span class="slash"></span>
+      Edwin Asveld <span style="opacity:.6">— CEO bij TransHeroes / Smart Logistics Group</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CONTACT ====================== -->
+<section class="contact" id="contact" data-bg="black">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow r-up">Contact</p>
+      <h2 class="r-up d1">Bel mij<span class="q">of stuur een mail.</span></h2>
+
+      <address class="r-up d2">
+        Koen Nijhuis<br>
+        Zandhuisweg 2<br>
+        7665 SH Albergen
+      </address>
+
+      <div class="contact-links r-up d3">
+        <a href="tel:0650645641" data-magnetic>06 506 456 41</a>
+        <a href="mailto:mail@koennijhuis.nl" data-magnetic>mail@koennijhuis.nl</a>
+        <a href="https://www.linkedin.com/in/koennijhuis/" data-magnetic>LinkedIn</a>
+        <a href="#privacy" class="muted">Privacyverklaring</a>
+      </div>
+    </div>
+
+    <form class="contact-form r-up d2" id="contactForm">
+      <p class="form-eyebrow">E-mail mij <span style="color:#fff;opacity:.5;">/</span></p>
+
+      <div class="field">
+        <label for="f-name">Naam</label>
+        <input id="f-name" name="name" type="text" autocomplete="name">
+        <span class="underline"></span>
+      </div>
+      <div class="field">
+        <label for="f-company">Bedrijf</label>
+        <input id="f-company" name="company" type="text" autocomplete="organization">
+        <span class="underline"></span>
+      </div>
+      <div class="field">
+        <label for="f-email">E-mailadres</label>
+        <input id="f-email" name="email" type="email" autocomplete="email">
+        <span class="underline"></span>
+      </div>
+      <div class="field">
+        <label for="f-msg">Opmerking</label>
+        <textarea id="f-msg" name="message" rows="3"></textarea>
+        <span class="underline"></span>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary btn-lg" style="background:var(--y);color:var(--k);border-color:var(--y);" data-magnetic>
+          <span class="slash" style="background:var(--k);"></span> Verstuur
+        </button>
+      </div>
+    </form>
+
+    <div class="contact-success r-up" id="contactSuccess" hidden>
+      <p class="big">Bedankt voor je reactie!</p>
+      <p style="font-size:16px;color:#ccc;margin:0;">Ik zal zo spoedig mogelijk contact met je opnemen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="footer">
+  <div class="container inner">
+    <span>KVK 70486034 · BTW NL128353284B02 · NL87 RABO 0326 1755 39</span>
+    <a href="#hero">
+      BACK TO TOP
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="restyle/v1/app.js"></script>
+</body>
+</html>
