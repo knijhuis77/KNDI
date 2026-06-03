@@ -520,6 +520,34 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; letter-spacing: 
   max-width: 52ch;
 }
 
+.context-list {
+  list-style: none;
+  margin: 0 0 64px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+.context-list li {
+  padding: 20px 32px 20px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--ink);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.context-list li::before {
+  content: '—';
+  color: var(--y);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -859,6 +887,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; letter-spacing: 
 
   .services { padding: 96px 0; }
   .services-head { grid-template-columns: 1fr; gap: 24px; }
+  .context-list { grid-template-columns: 1fr; }
   .service-grid { grid-template-columns: 1fr; }
 
   .clients { padding: 96px 0; }
