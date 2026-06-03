@@ -176,13 +176,15 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const emailEl = form.querySelector('#f-email');
-      if (emailEl && !emailEl.value.trim()) {
-        emailEl.classList.add('invalid');
-        emailEl.focus();
-        emailEl.addEventListener('input', () => emailEl.classList.remove('invalid'), { once: true });
-        return;
-      }
+      let firstInvalid = null;
+      form.querySelectorAll('[required]').forEach(field => {
+        if (!field.value.trim()) {
+          field.classList.add('invalid');
+          field.addEventListener('input', () => field.classList.remove('invalid'), { once: true });
+          if (!firstInvalid) firstInvalid = field;
+        }
+      });
+      if (firstInvalid) { firstInvalid.focus(); return; }
 
       // Loading state
       const btn = form.querySelector('#submitBtn');

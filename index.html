@@ -285,26 +285,35 @@
         <div class="t-track" id="tTrack">
           <figure class="t-slide">
             <blockquote class="quote">
-              &ldquo;Koen is een prettige kerel om mee te werken, verstand van zaken
-              en pro-actief. Onze samenwerking zal waarschijnlijk nog lang duren.&rdquo;
+              &ldquo;Koen begeleidt voor ons het project en de koppelingen tussen meerdere
+              digitale (online) omgevingen. Dat geeft ons rust! We hoeven de voortgang niet
+              zelf te bewaken. Op deze manier wordt er effici&euml;nt gewerkt.&rdquo;
             </blockquote>
             <figcaption class="cite">
-              <span class="name">Edwin Asveld</span>
-              <span class="role">CEO, TransHeroes / Smart Logistics Group</span>
+              <span class="name">Henry Loohuis</span>
+              <span class="role">CEO at Loogisch NL en Loogisch GmbH</span>
             </figcaption>
           </figure>
-          <figure class="t-slide" data-placeholder>
-            <blockquote class="quote">&ldquo;Ruimte voor jouw review.&rdquo;</blockquote>
+          <figure class="t-slide">
+            <blockquote class="quote">
+              &ldquo;Koen is de spin in het web en de verbinding tussen Licent en onze
+              businesspartners op digitaal gebied en dat ontzorgt mij in mijn werk.
+              Een erg prettige en constructieve samenwerking!&rdquo;
+            </blockquote>
             <figcaption class="cite">
-              <span class="name">Jouw bedrijf</span>
-              <span class="role">Stuur je quote door, dan plaats ik &rsquo;m hier</span>
+              <span class="name">Jean-Paul Deterink</span>
+              <span class="role">Formulemanager bij Licent</span>
             </figcaption>
           </figure>
-          <figure class="t-slide" data-placeholder>
-            <blockquote class="quote">&ldquo;Ruimte voor jouw review.&rdquo;</blockquote>
+          <figure class="t-slide">
+            <blockquote class="quote">
+              &ldquo;Bewust voor Koen als onze &lsquo;regisseur&rsquo; gekozen m.b.t.
+              herontwikkeling van onze eigen software. Korte lijnen, pragmatisch en
+              plezierig in contact.&rdquo;
+            </blockquote>
             <figcaption class="cite">
-              <span class="name">Jouw bedrijf</span>
-              <span class="role">Stuur je quote door, dan plaats ik &rsquo;m hier</span>
+              <span class="name">Jan Brink</span>
+              <span class="role">Owner at Ditt BV</span>
             </figcaption>
           </figure>
         </div>
@@ -341,9 +350,12 @@
 
     <div class="contact-form-card r-up d2">
       <h3>E-mail mij</h3>
+      <div class="contact-success" id="contactSuccess" hidden>
+        <h4>Bedankt voor je reactie.</h4>
+        <p>Ik neem zo spoedig mogelijk contact met je op.</p>
+      </div>
       <form class="contact-form" id="contactForm" novalidate>
 
-        <!-- Web3Forms: vervang de access_key hieronder met jouw sleutel van web3forms.com -->
         <input type="hidden" name="access_key" value="68002fb2-8ea9-41bf-a387-404ba9297ce1">
         <input type="hidden" name="subject" value="Nieuw bericht via KNDI.nl">
         <input type="hidden" name="from_name" value="KNDI Website">
@@ -351,19 +363,19 @@
 
         <div class="field">
           <label for="f-name">Naam</label>
-          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Je naam">
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Je naam" required>
         </div>
         <div class="field">
           <label for="f-company">Bedrijf</label>
-          <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="Bedrijfsnaam">
+          <input id="f-company" name="company" type="text" autocomplete="organization" placeholder="Bedrijfsnaam" required>
         </div>
         <div class="field">
           <label for="f-email">E-mailadres</label>
-          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="naam@bedrijf.nl">
+          <input id="f-email" name="email" type="email" autocomplete="email" placeholder="naam@bedrijf.nl" required>
         </div>
         <div class="field">
           <label for="f-msg">Opmerking</label>
-          <textarea id="f-msg" name="message" rows="3" placeholder="Waar kan ik mee helpen?"></textarea>
+          <textarea id="f-msg" name="message" rows="3" placeholder="Waar kan ik mee helpen?" required></textarea>
         </div>
         <div class="submit-row">
           <button type="submit" class="btn btn-yellow" id="submitBtn">
@@ -375,10 +387,6 @@
           Er ging iets mis. Probeer het opnieuw of mail direct naar <a href="mailto:mail@koennijhuis.nl">mail@koennijhuis.nl</a>.
         </p>
       </form>
-      <div class="contact-success" id="contactSuccess" hidden>
-        <h4>Bedankt voor je reactie.</h4>
-        <p>Ik neem zo spoedig mogelijk contact met je op.</p>
-      </div>
     </div>
   </div>
 </section>
