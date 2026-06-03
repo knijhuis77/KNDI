@@ -664,7 +664,7 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; letter-spacing: 
   letter-spacing: -0.015em;
   margin: 0 0 40px;
   text-wrap: balance;
-  max-width: 22ch;
+  max-width: 70%;
 }
 .t-slide[data-placeholder] .quote,
 .t-slide[data-placeholder] .cite { opacity: 0.5; }
