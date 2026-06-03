@@ -881,6 +881,53 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; letter-spacing: 
   .cv-foot { padding: 24px 0 80px; flex-direction: column; align-items: flex-start; gap: 16px; }
 }
 
+@media (max-width: 640px) {
+  .cv-rail-wrap {
+    overflow-x: visible;
+    height: auto;
+    padding-left: 40px;
+  }
+
+  /* Vertical rail on the left */
+  .cv-rail {
+    top: 0; bottom: 0; left: 0; right: auto;
+    width: 1px; height: 100%;
+  }
+
+  /* Track stacks vertically */
+  .cv-track {
+    flex-direction: column;
+    position: relative;
+    padding: 8px 0 40px 0;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  /* Each item: height auto, card shows normally */
+  .cv-item {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto;
+    padding: 0 0 40px 24px;
+    display: block;
+  }
+
+  .cv-item .node {
+    left: -6px;
+    top: 4px;
+    transform: none;
+  }
+  .cv-item .node::before,
+  .cv-item .node::after { display: none; }
+
+  /* Cards: static flow instead of absolute above/below */
+  .cv-card { position: static; }
+  .cv-item.below .cv-card,
+  .cv-item.above .cv-card { position: static; top: auto; bottom: auto; }
+
+  .cv-foot { display: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .r-up { opacity: 1; transform: none; }
   .cv-track, .cv-rail::before, .cv-foot .progress i, .hero-photo img { transform: none !important; }
