@@ -282,6 +282,22 @@
     if (slider) {
       slider.addEventListener('mouseenter', () => { paused = true; });
       slider.addEventListener('mouseleave', () => { paused = false; });
+
+      let touchStartX = 0;
+      let touchStartY = 0;
+      slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        paused = true;
+      }, { passive: true });
+      slider.addEventListener('touchend', (e) => {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        const dy = e.changedTouches[0].clientY - touchStartY;
+        paused = false;
+        if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+          go(dx < 0 ? index + 1 : index - 1);
+        }
+      }, { passive: true });
     }
     document.addEventListener('visibilitychange', () => { paused = document.hidden; });
 
